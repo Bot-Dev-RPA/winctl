@@ -232,7 +232,7 @@ namespace WinCtl
 
             if (restore || (!minimize && !maximize))
             {
-                if (IsIconic(hwnd))
+                if (IsIconic(hwnd) || IsZoomed(hwnd))
                     ShowWindow(hwnd, SW_RESTORE);
             }
 
