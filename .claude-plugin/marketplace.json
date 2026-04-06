@@ -1,0 +1,35 @@
+{
+  "name": "skills",
+  "owner": {
+    "name": "Sumit Kumar"
+  },
+  "metadata": {
+    "description": "Claude Code skills collection",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "winctl",
+      "description": "Resize, move, snap, maximize, minimize, center, pin, or list desktop windows on Windows using Win32 APIs",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/winctl"
+      ]
+    },
+    {
+      "name": "screenshot",
+      "description": "Capture screenshots of windows, screens, monitors, or regions on Windows",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/screenshot"]
+    },
+    {
+      "name": "oneocr",
+      "description": "Offline OCR to extract text from images, screenshots, or clipboard using Windows Snipping Tool's engine",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/oneocr"]
+    }
+  ]
+}
